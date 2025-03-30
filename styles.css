@@ -1,41 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  #game-board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 5px;
-    justify-content: center;
-    margin: 20px auto;
-  }
-  
-  .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: 2px solid #333;
-  }
-  
-  .cell.taken {
-    pointer-events: none;
-  }
-  
-  #game-info {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-  }
-  
-  #restart-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  background-color: blueviolet;
+  width: 100%;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#board{
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  background-color: aquamarine;
+  margin: 10px auto;
+
+}
+
+.cell{
+  background-color: crimson;
+  text-align: center;
+  font-size: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.cell:hover{
+  background: darkred;
+}
+
+#reset-btn{
+  background-color: blue;
+  color: #fff;
+  width: 90px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-out;
+}
+
+#reset-btn:hover{
+  background-color: black;
+  transform: scale(1.25);
+}
+
+#status-msg{
+  text-align: center;
+  margin: 20px 10px;
+  color: #fff;
+  background-color: black;
+  width: 100%;
+}
+
+
+
+
   
